@@ -122,7 +122,7 @@ Confirmo que quedó aplicado:
 get system interface physical
 ```
 
-A partir de aquí abro `https://20.25.37.1` desde el navegador y continúo todo lo demás sin volver a tocar la CLI.
+A partir de aquí abro `https://192.168.19.10` desde el navegador y continúo todo lo demás sin volver a tocar la CLI.
 
 📸 [`00-cli-port2.png`](evidencias/00-cli-port2.png)
 
