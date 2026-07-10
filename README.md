@@ -84,7 +84,7 @@ Metas puntuales:
 
 | Interfaz | Red | IP asignada al Fortinet | Rango disponible para hosts |
 |---|---|---|---|
-| port2 (WAN) | 20.25.37.0/24 | 20.25.37.1/24 | .2 – .254 (uplink hacia *Net*) |
+| port2 (WAN) | 192.168.19.0/24 | 192.168.19.10/24 | .2 – .254 (uplink hacia *Net*) |
 | port3 (LAN-USERS) | 202.50.73.0/25 | 202.50.73.1/25 | .2 – .126 (DHCP) |
 | port1 (LAN-SERVIDORES) | 202.50.73.128/25 | 202.50.73.129/25 | .130 – .254 (IP fija) |
 
@@ -109,7 +109,7 @@ Recién desplegado, el Fortinet no tiene forma de recibir conexiones HTTPS/HTTP 
 config system interface
     edit "port2"
         set mode static
-        set ip 20.25.37.1 255.255.255.0
+        set ip 192.168.19.10 255.255.255.0
         set allowaccess ping https http ssh
         set role wan
     next
