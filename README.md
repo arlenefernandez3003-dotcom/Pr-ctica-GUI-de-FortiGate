@@ -7,8 +7,6 @@ Seguridad de Redes · Prof. Jonathan Esteban Rondón Corniel
 **Arlene Fernández Herrera · Matrícula: 2025-0730**
 
 ![FortiGate](https://img.shields.io/badge/Plataforma-FortiGate-red?style=for-the-badge&logo=fortinet)
-![SSLVPN](https://img.shields.io/badge/Protocolo-SSL%20VPN-blue?style=for-the-badge)
-![Client](https://img.shields.io/badge/Cliente-FortiClient%20Linux-orange?style=for-the-badge&logo=linux)
 ![Platform](https://img.shields.io/badge/Entorno-PNetLab-blueviolet?style=for-the-badge)
 
 </div>
