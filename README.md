@@ -297,13 +297,13 @@ Ambos perfiles se asignan también en `USERS-a-Internet > Security Profiles`.
 
 ---
 
-### 3.9 DoS Policy — anti escaneo de puertos
+### 3.9 IPv4 DoS Policy — anti escaneo de puertos
 
-Como la licencia instalada no trae el paquete completo de firmas IPS, no cuento con firmas dedicadas para detectar escaneos tipo Nmap. FortiOS resuelve esto de forma nativa con una **DoS Policy**, que analiza comportamiento (tasa de paquetes/conexiones) en lugar de depender de una firma puntual, así que la uso para cubrir esta parte del laboratorio.
+Como la licencia instalada no trae el paquete completo de firmas IPS, no cuento con firmas dedicadas para detectar escaneos tipo Nmap. FortiOS resuelve esto de forma nativa con una **IPv4 DoS Policy**, que analiza comportamiento (tasa de paquetes/conexiones) en lugar de depender de una firma puntual, así que la uso para cubrir esta parte del laboratorio.
 
 La coloco sobre **port2 (WAN)**, ya que es el punto de entrada donde quiero detectar intentos de reconocimiento hacia la red, sean estos originados desde la nube *Net* o simulados desde el propio host de LAN-USERS enrutando hacia afuera.
 
-**Menú:** `Policy & Objects > DoS Policy > Create New`
+**Menú:** `Policy & Objects > IPv4 DoS Policy > Create New`
 
 | Campo | Valor |
 |---|---|
@@ -327,10 +327,10 @@ La coloco sobre **port2 (WAN)**, ya que es el punto de entrada donde quiero dete
 Desde el host de LAN-USERS:
 
 ```bash
-nmap -sS -sU 202.50.73.130
+nmap -sS -sU 192.168.19.10
 ```
 
-Reviso el resultado en `Log & Report > Security Events > Anomaly`, donde debe aparecer la anomalía disparada, el origen y la acción `Blocked`.
+Reviso el resultado en `Log & Report > Anomaly`, donde debe aparecer la anomalía disparada, el origen y la acción `Blocked`.
 
 📸 [`10-dos-policy.png`](evidencias/10-dos-policy.png)
 📸 [`11-dos-policy-anomalias.png`](evidencias/11-dos-policy-anomalias.png)
