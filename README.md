@@ -183,7 +183,7 @@ Doy de alta port3 y port1 con la IP fija que le corresponde a cada una según la
 | Campo | Valor |
 |---|---|
 | Destino | 0.0.0.0/0.0.0.0 |
-| Gateway | *(gateway de la nube Net, según asignación del laboratorio)* |
+| Gateway | 192.168.19.2 |
 | Interfaz de salida | port2 |
 | Distancia | 10 |
 
