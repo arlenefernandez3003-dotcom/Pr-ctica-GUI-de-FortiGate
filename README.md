@@ -391,6 +391,8 @@ Todas las capturas referenciadas a lo largo de este documento se encuentran en l
 | 09 | [`09-dns-web-filter.png`](evidencias/09-dns-web-filter.png) | DNS/Web Filter bloqueando el dominio institucional y sus subdominios. |
 | 10–12 | [`10-dos-policy.png`](evidencias/10-dos-policy.png), [`11-dos-policy-anomalias.png`](evidencias/11-dos-policy-anomalias.png), [`12-log-anomaly-scan.png`](evidencias/12-log-anomaly-scan.png) | DoS Policy en port2 con tcp_port_scan y udp_scan activos, y el log mostrando un escaneo bloqueado. |
 | 13–14 | [`13-waf-servidores.png`](evidencias/13-waf-servidores.png), [`14-waf-sqli-bloqueado.png`](evidencias/14-waf-sqli-bloqueado.png) | Perfil WAF aplicado y un intento de SQL Injection bloqueado contra el servicio en LAN-SERVIDORES. |
+| 15 | [15_bloqueo_rrss.png](evidencias/15_bloqueo_rrss.png) | Intento fallido de acceso a una red social (ej. facebook.com) desde la LAN de usuarios — página de bloqueo de FortiGate. |
+| 16 | [16_bloqueo_itla.png](evidencias/16_bloqueo_itla.png) | Intento fallido de acceso a itla.edu.do página de bloqueo de FortiGate. |
 
 ---
 
